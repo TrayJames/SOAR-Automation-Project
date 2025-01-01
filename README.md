@@ -23,8 +23,10 @@ The following screenshots detail the steps that occurred after this setup:
 ## Event Trigger and Rule Setup
 
 *Sysmon Logged mimikatz installation*
-![EEG Band Discovery](/assets/Screenshot 2025-01-01 160437.png)
+![EEG Band Discovery](/assets/SysmonDetectedMimikatzInstall.png)
 
 *Wazuh received log from Sysmon on mimikatz installation*
 ![EEG Band Discovery](/assets/MitreWazuhDetection.png)
 
+*Created new custom rule for sysmon events having an ID of 1. Rule looks for mimikat.exe originalFileName with a MITRE id of T1003 indicating Credential dumping* 
+![EEG Band Discovery](/assets/CreatingWazuhCustomRules.png)
