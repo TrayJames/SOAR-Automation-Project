@@ -3,7 +3,11 @@
 
 With advancements in technology security professionals now have the ability to detect and automate responses to certain events/alerts via a SOAR (Security Orchestration Automation and Response). This Project demonstrates setting up this process utilizing open-source technologies; Wazuh, TheHive, and Shuffle (the SOAR platform)
 
-![alt text](https://github.com/TrayJames/SOAR-Automation-Project/blob/main/1SOC_Automation.png?raw=true)
+
+<!---![alt text](https://github.com/TrayJames/SOAR-Automation-Project/blob/main/assets/1SOC_Automation.png?raw=true) --->
+
+![EEG Band Discovery](/assets/1SOC_Automation.png)
+*Diagram of Orchestration Dataflow*
 
 ## Starting Point/Setup
 As starting point for this project I:
@@ -16,7 +20,11 @@ As starting point for this project I:
 
 The following screenshots detail the steps that occurred after this setup:
 
-## Orchestration Implementation
+## Event Trigger and Rule Setup
 
+*Sysmon Logged mimikatz installation*
+![EEG Band Discovery](/assets/Screenshot 2025-01-01 160437.png)
 
+*Wazuh received log from Sysmon on mimikatz installation*
+![EEG Band Discovery](/assets/MitreWazuhDetection.png)
 
