@@ -35,3 +35,5 @@ The following screenshots detail the steps that occurred after this setup:
 ![EEG Band Discovery](/assets/NewRuleMimikatzCapture.png)
 
 ## Orchestration Setup
+*Edited Wazuh Configuration to forward json when the rule for the mimikatz event I created is triggered this will be captured by the webhook in shuffle* 
+![EEG Band Discovery](/assets/WazuhAutomationConfiguration.png)
