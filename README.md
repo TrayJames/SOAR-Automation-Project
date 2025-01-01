@@ -5,8 +5,8 @@ With advancements in technology security professionals now have the ability to d
 
 ## Starting Point/Setup
 To Setup this project I:
-1. Created a new Windows 10 VM and installed Sysmon on it.
-2. Created two Ubuntu 22.04 servers in the cloud via Digital Ocean. One for Wazuh and TheHive
+1. Created a new Windows 10 VM using Virtual Box and installed Sysmon on it.
+2. Created two Ubuntu 22.04 servers in the cloud via Digital Ocean. One for Wazuh and other for TheHive
 3. Created Firewall Inbound rules to only allow TCP UDP and ICMP(ping) packets from my home machine IP
 4. Configured both Wazuh and TheHive and got both services started. 
 
