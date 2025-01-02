@@ -64,6 +64,20 @@ The following screenshots detail the steps that occurred after this setup:
 
 ## Active Response Setup
 
-The following details Setting up a Wazuh Active response in which a user will be prompted with options as to what to do when an SSH bruteforce is detected. This time the above workflow is the same but we are using a Ubuntu VM instead of a Windows VM. The automation workflow will follow the same pattern as above except now it will alert if an ssh bruteforce attack is done, and prompt a user for an response given this alert.
+Bellow details setting up Wazuh Active response in which a user will be prompted with options as to what to do when an SSH brute force is detected. This time the above workflow is using a Ubuntu VM instead of a Windows VM. To be clear the automation workflow will follow a similar pattern as above: 
+
+1. An SSH brute force will occur on our Ubuntu VM.
+2. Wazuh will send an alert to Shuffle.
+3. Shuffle will parse out the IP address within the alert response
+4. The IP address will be submitted to VirusTotal be evaluated and see if it is malicious
+5. The output from VirusTotal will generate an alert to theHive and send an email to the SOC analyst.
+6. The SOC analyst will receive a report about the event and will be prompted with response options.
+7. Based on what the SOC analyst's response is an action will be performed by Wazuh 
+
+The starting point for the Active Response Setup will start by configuring action rules in Wazuh:
+
+
+
+
 
 
