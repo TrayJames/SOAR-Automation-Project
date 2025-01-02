@@ -34,7 +34,7 @@ The following screenshots detail the steps that occurred after this setup:
 *Renamed mimikatz.exe to this_a_safe_program.exe and ran it. Despite this Wazuh still captured and flaged the event in accordance to the newly created rule. This is because it is looking at the original filename instead of the image name* 
 ![EEG Band Discovery](/assets/NewRuleMimikatzCapture.png)
 
-## Orchestration Notification Setup
+## Orchestration and Notification Setup
 *Edited Wazuh Configuration to forward json when the rule for the mimikatz event I created is triggered this will be captured by the webhook in shuffle* 
 ![EEG Band Discovery](/assets/WazuhAutomationConfiguration.png)
 
@@ -51,8 +51,19 @@ The following screenshots detail the steps that occurred after this setup:
 ![EEG Band Discovery](/assets/ShuffleVirusTotalOutput.png)
 
 *Setting up the TheHive Incident Response workflow. A request is created in Shuffle that will be sent to the Hive to create an alert using a Hive API Key. The below shows this request was successfully received by TheHive and a new alert is created*
-![EEG Band Discovery](/assets/ShuffleVirusTotalOutput.png)
+  ![EEG Band Discovery](/assets/SetupHiveWorkflowAlertCreatedSuccessfully.png)
+
+*The generated alert as it is presented in the TheHive alert Summary*
+  ![EEG Band Discovery](/assets/TheHiveAlertSummary.png)
+
+*Adding Email functionality in the workflow. After we create an alert in TheHive we will send an email to the SOC analyst about the alert *
+  ![EEG Band Discovery](/assets/WorkFlowEmailSentSetup.png)
+
+*Email about the alert is successfully sent and received*
+  ![EEG Band Discovery](/assets/EmailSuccessfullySentAndReceived.png)
 
 ## Active Response Setup
+
+The following details Setting up a Wazuh Active response in which a user will be prompted with options as to what to do when an SSH bruteforce is detected. This time the above workflow is the same but we are using a Ubuntu VM instead of a Windows VM. The automation workflow will follow the same pattern as above except now it will alert if an ssh bruteforce attack is done, and prompt a user for an response given this alert.
 
 
