@@ -83,11 +83,17 @@ The starting point for the Active Response Setup will start by configuring actio
   ![EEG Band Discovery](/assets/SSHBruteForce.png)
 
 
-*An attempt to brute force SSH was discovered by Wazuh*
-  ![EEG Band Discovery](/assets/SSHBruteForce.png)
+*Alert is sent to Shuffle by Wazuh and is received successfully*
+  ![EEG Band Discovery](/assets/ShuffleCaptureBruteForce.png)
 
   
 
+*Add a new app to the workflow to Authenticate to the Wazuh API. This API is what will be used when we want to change add an active response in Wazuh*
+  ![EEG Band Discovery](/assets/AuthenticateWazuhAPI.png)
+
+
+*IP from the alert Wazuh sent is passed to virus total via its API. Bellow is Virustotals response*
+  ![EEG Band Discovery](/assets/VirusTotalIPAnalysis.png)
 
 
 
