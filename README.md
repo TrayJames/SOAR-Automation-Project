@@ -76,7 +76,17 @@ Bellow details setting up Wazuh Active response in which a user will be prompted
 
 The starting point for the Active Response Setup will start by configuring action rules in Wazuh:
 
+*Setting up action-response in Wazuh; The action-response 'firewall-drop' will block the IP we specify for a particular agent or list of agents *
+  ![EEG Band Discovery](/assets/WazuhActiveResponseSetup.png)
 
+*An attempt to brute force SSH was discovered by Wazuh*
+  ![EEG Band Discovery](/assets/SSHBruteForce.png)
+
+
+*An attempt to brute force SSH was discovered by Wazuh*
+  ![EEG Band Discovery](/assets/SSHBruteForce.png)
+
+  
 
 
 
